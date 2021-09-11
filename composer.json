@@ -1,0 +1,53 @@
+{
+    "name": "imanghafoori/questionist",
+    "description": "Advanced event listener system",
+    "keywords": ["laravel", "laravel5-package", "PHP", "laravel5"],
+    "license": "MIT",
+    "homepage": "https://github.com/imanghafoori1/questionist",
+    "authors": [
+        {
+            "name": "Iman Ghafoori",
+            "email": "imanghafoori1@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "laravel/framework":"~5.1|6.*|7.*|8.*|9.*"
+    },
+    "require-dev": {
+        "orchestra/testbench": "~6.0",
+        "mockery/mockery": "1.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Imanghafoori\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/TestCase.php"
+        ],
+        "psr-4": {
+            "Imanghafoori\\Tests257\\": "tests"
+        }
+    },
+	"suggest": {
+        "imanghafoori/laravel-widgetize": "Gives you a better structure and caching opportunity for your web pages.",
+		"imanghafoori/laravel-masterpass": "You can easily set a master password without code change.",
+        "imanghafoori/laravel-terminator": "Gives you opportunity to refactor your controllers.",
+        "imanghafoori/eloquent-relativity": "Decouple your eloquent models from each other."
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Imanghafoori\\QuestionStarsServiceProvider"
+            ]
+        }
+    }
+}
